@@ -1,5 +1,5 @@
 version: '3.7'
-
+#يشير هذا السطر إلى أن ملف التكوين يتبع مواصفات Docker Compose الإصدار 3.7.
 services:
   web:
     build: .
