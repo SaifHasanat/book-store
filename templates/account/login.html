@@ -7,6 +7,6 @@ Log In
 <form method="POST">
   {% csrf_token %}
     {{form.as_p}}
-    <button type="submit">LogIn</button>
+    <button type="submit" class="btn btn-danger">LogIn</button>
 </form>
 {% endblock content %}
