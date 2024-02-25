@@ -1,9 +1,12 @@
 version: '3.7'
-#يشير هذا السطر إلى أن ملف التكوين يتبع مواصفات Docker Compose الإصدار 3.7.
+
 services:
   web:
     build: .
     command: python /books/manage.py runserver 0.0.0.0:8000
+    environment:
+      - SECRET_KEY=EpR120DQvlu2ZvdfTXFa3Qx6kMQByYyW=EhDo25Dd0sddJozpy4gK7sCgplEeB1Do
+      - DEBUG=1
     volumes:
       - .:/books
     ports:
