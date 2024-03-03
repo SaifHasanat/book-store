@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'allauth.account',
     # local
     'users.apps.UsersConfig',
-    'pages.apps.PagesConfig'
+    'pages.apps.PagesConfig',
+    'books.apps.BooksConfig',
 ]
 
 CRISPY_TEMPLATE_PACK='bootstrap4'       #<--

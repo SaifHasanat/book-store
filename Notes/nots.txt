@@ -45,3 +45,5 @@ volumes: - postgres_data:/var/lib/postgresql/data/
 التخصيص المستقبلي: سيتم لاحقًا تخصيص رسالة البريد الإلكتروني الترحيبية وتكوين خادم SMTP مناسب لإرسالها بالطريقة الصحيحة.
 
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# pk is a primary key but the id is a default model field
