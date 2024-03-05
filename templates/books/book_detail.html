@@ -4,10 +4,17 @@
 
 {%block content%}
 <div class="book-detail">
-    <h2><a href="">{{object.title}}</a></h2>
-    <p>Author: {{object.author}} </p>
-    <p>Price: {{object.price}} </p>
-
+    <h2><a href="">{{book.title}}</a></h2>
+    <p>Author: {{book.author}} </p>
+    <p>Price: {{book.price}} </p>
+    <div>
+        <h4>Reviews</h4>
+        <ul>
+            {% for review in book.reviews.all %}
+                <li>{{review.review}} ({{review.author}})</li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>
 
 {%endblock content%}
