@@ -47,3 +47,5 @@ volumes: - postgres_data:/var/lib/postgresql/data/
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # pk is a primary key but the id is a default model field
+
+short cut : ctrl + shift + alt + j ,

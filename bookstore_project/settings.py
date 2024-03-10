@@ -143,6 +143,9 @@ STATICFILES_FINDERS = [                                      #<--
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 ]
 
+MEDIA_URL='/media/'
+MEDIA_ROOT=os.path.join(BASE_DIR,'media')
+
 # استخدم STATICFILES_DIRS لتنظيم الملفات الثابتة أثناء التطوير.
 # استخدم STATIC_ROOT لتحضير الملفات الثابتة للنشر
 # عن طريق جمعها في دليل واحد لتقديمها بكفاءة من قبل خادم الويب.
