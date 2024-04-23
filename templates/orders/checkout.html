@@ -1,0 +1,18 @@
+{% extends '_base.html'%}
+
+{%block title%}orders{%endblock title%}
+
+{%block content%}
+<h1>Orders Page</h1>
+<p>book title : {{book.title}}</p>
+<p>price : {{book.price}}</p>
+<p>{{book.id}}</p>
+
+<form method="POST">
+    {% csrf_token%}
+    {{form.render}}
+
+</form>
+
+
+{%endblock content%}

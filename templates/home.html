@@ -6,8 +6,12 @@ Django just gives this to us automatically-->
 
 {%block content%}
 <h1>HomePage</h1>
-<img class="bookcover" src="{% static 'images/django-pro.png'%}">
 
+<div>
+    <form method="get" action="{% url 'search_results' %}" class="form-inline mt-2 mt-md-0">
+        <input type="text" placeholder="Search" class="form-control mr-sm-2" name="q" aria-label="search">
+    </form>
+</div>
 
 {%endblock content%}
 

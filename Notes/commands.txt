@@ -1,0 +1,19 @@
+docker-compose exec web python manage.py collectstatic
+to create a single, production-ready directory of all the static files in our project.
+
+# http://127.0.0.1:8000/
+ch3 commands
+build our image and run the containers
+>>docker-compose up -d --build
+
+chapter 6 commands:
+
+#Imagine we wanted to deploy our website right away. Among other steps, we’d need
+to run collectstatic to create a single, production-ready directory of all the static
+files in our project.
+
+>>docker-compose exec web python manage.py collectstatic
+
+>>docker-compose exec web pipenv install django-crispy-forms
+
+>>docker-compose exec web pipenv install crispy-bootstrap4

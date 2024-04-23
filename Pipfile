@@ -10,6 +10,7 @@ django-crispy-forms = "*"
 crispy-bootstrap4 = "*"
 django-allauth = "*"
 pillow = "*"
+django-paypal = "*"
 
 [dev-packages]
 

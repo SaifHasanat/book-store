@@ -1,0 +1,17 @@
+setUpTestData() is called once at the beginning of the test run for class-level setup. You'd use this
+to create objects that aren't going to be modified or changed in any of the test methods.
+
+setUp() is called before every test function to set up any objects that may be modified by the test
+(every test function will get a "fresh" version of these objects).
+
+
+(SimpleTestCase) that is designed for webpages that do not have a model included
+ resolve() لتحديد وظيفة العرض التي يتم تعيينها لمسار ويب معين
+
+
+we can remove the test_homepage_url_name test since we’re using the reverse on home each time in setUp
+def test_homepage_url_name(self):
+    response=self.client.get(reverse('home'))
+    self.assertEqual(response.status_code,200)
+
+#SimpleTestCase disallows database queries by default.
