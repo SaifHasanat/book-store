@@ -18,6 +18,14 @@ class BookDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
     login_url = 'account_login'
     permission_required = ('books.special_status',)
 
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        queryset = queryset.prefetch_related('reviews__author')
+
+        return queryset    
+
+       
+
 
 class SearchResultsListView(ListView):
     model = Book
